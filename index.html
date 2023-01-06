@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Monstervolt</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container header__container--desktop">
+            <nav>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="">Контакты</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="">О магазине</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="">Доставка и оплата</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="">Условия соглашения</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="header__address">г. Москва и МО</address>
+            <a href="/" class="header__enter">Вход/Регистрация</a>
+        </div>
+        <div class="container header__container header__container--mobile">
+            <div>
+                <button class="header__burger-menu"></button>
+                <ul class="navigation__list navigation__list--mobile">
+                    <li>
+                        <a href="" class="navigation__link--catalog">КАТАЛОГ ТОВАРОВ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">СВЕТИЛЬНИКИ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">КАБЕЛЕНЕСУЩИЕ СИСТЕМЫ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">КАБЕЛИ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">БОКСЫ И ЩИТЫ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">ОСВЕЩЕНИЕ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">ЛАМПЫ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">ТЕПЛЫЕ ПОЛЫ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">ПРОИЗВОДИТЕЛИ</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="header__link-info"></a>
+            <a href="" class="header__link-enter"></a>
+            <button class="header__button-search"></button>
+            <div class="header__search-bar">
+                <input type="text" class="header__search-bar-input" placeholder="Поиск товара по каталогу">
+                <button class="header__search-bar-button-close"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="action-bar__section">
+            <div class="container action-bar__container">
+                <a href="/" class="action-bar__logo"></a>
+                <div class="action-bar__search">
+                    <div class="action-bar__search-category">Все категории</div>
+                    <form class="action-bar__search-form">
+                        <input type="text" class="action-bar__search-form-input" name="text" class="search" placeholder="Поиск товара по каталогу">
+                        <button type="submit" class="action-bar__search-form-button"></button>
+                    </form>
+                </div>
+                <div class="action-bar__call">
+                    <a href="" class="action-bar__call-number">+7 (495) 785-35-05</a>
+                    <a href="" class="action-bar__call-order">ЗАКАЗАТЬ ЗВОНОК</a>
+                </div>
+                <div class="action-bar__action-icons">
+                    <a href="" class="action-bar__action-icon--compare action-bar__action-icon"></a>
+                    <a href="" class="action-bar__action-icon--favorite action-bar__action-icon"></a>
+                    <a href="" class="action-bar__action-icon--basket action-bar__action-icon"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation__section">
+            <div class="container navigation__container">
+                <ul class="navigation__list navigation__list--desktop">
+                    <li>
+                        <a href="" class="navigation__link--catalog">КАТАЛОГ ТОВАРОВ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">СВЕТИЛЬНИКИ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">КАБЕЛЕНЕСУЩИЕ СИСТЕМЫ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">КАБЕЛИ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">БОКСЫ И ЩИТЫ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">ОСВЕЩЕНИЕ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">ЛАМПЫ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">ТЕПЛЫЕ ПОЛЫ</a>
+                    </li>
+                    <li>
+                        <a href="" class="navigation__link">ПРОИЗВОДИТЕЛИ</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-banner__section">
+            <div class="container main-banner__container">
+                <div class="main-banner__swiper">
+                    <img src="./images/swiper.jpg" alt="" class="main-banner__swiper-img">
+                    <div class="main-banner__swiper-buttons">
+                        <button class="main-banner__swiper-button main-banner__swiper-button--prev"></button>
+                        <button class="main-banner__swiper-button main-banner__swiper-button--next"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories__section">
+            <div class="container">
+                <h2 class="h2-style categories__h2">Популярные категории</h2>
+                <ul class="categories__list">
+                    <li class="categories__item">
+                        <h3 class="categories__h3">ЛАМПЫ</h3>
+                        <a href="" class="categories__item-content">Лампа галогенная низковольтная без отражателя</a>
+                        <a href="" class="categories__item-content">Лампа накаливания в форме шара</a>
+                        <a href="" class="categories__item-content">Лампа люминесцентная компактная интегрированная</a>
+                        <a href="" class="categories__item-content">Лампа галогенная сетевого напряжения с отражателем</a>
+                    </li>
+                    <li class="categories__item">
+                        <h3 class="categories__h3">ЛАМПЫ</h3>
+                        <a href="" class="categories__item-content">Лампа галогенная низковольтная без отражателя</a>
+                        <a href="" class="categories__item-content">Лампа накаливания в форме шара</a>
+                        <a href="" class="categories__item-content">Лампа люминесцентная компактная интегрированная</a>
+                        <a href="" class="categories__item-content">Лампа галогенная сетевого напряжения с отражателем</a>
+                    </li>
+                    <li class="categories__item">
+                        <h3 class="categories__h3">ЛАМПЫ</h3>
+                        <a href="" class="categories__item-content">Лампа галогенная низковольтная без отражателя</a>
+                        <a href="" class="categories__item-content">Лампа накаливания в форме шара</a>
+                        <a href="" class="categories__item-content">Лампа люминесцентная компактная интегрированная</a>
+                        <a href="" class="categories__item-content">Лампа галогенная сетевого напряжения с отражателем</a>
+                    </li>
+                    <li class="categories__item">
+                        <h3 class="categories__h3">ЛАМПЫ</h3>
+                        <a href="" class="categories__item-content">Лампа галогенная низковольтная без отражателя</a>
+                        <a href="" class="categories__item-content">Лампа накаливания в форме шара</a>
+                        <a href="" class="categories__item-content">Лампа люминесцентная компактная интегрированная</a>
+                        <a href="" class="categories__item-content">Лампа галогенная сетевого напряжения с отражателем</a>
+                    </li>
+                </ul>
+                <a href="" class="categories__button-show-more">Показать больше</a>
+            </div>
+        </section>
+        <section class="discounts__section">
+            <div class="container">
+                <h2 class="h2-style discounts__h2">Хотите первым узнавать о скидках?</h2>
+                    <p class="discounts__content">Оставьте Ваш Email и мы расскажем о самых выгодных предложениях и акциях</p>
+                    <form action="" class="discounts__form">
+                        <input type="text" class="discounts__email" placeholder="Введите ваш e-mail*">
+                        <button type="submit" class="discounts__button-offers">Получить спецпредложения</button>
+                        <label for="discountsInput" class="discounts__label">
+                            <input type="checkbox" name="discounts__input" id="discountsInput" />
+                            Я согласен с политикой конфиденциальности
+                        </label>
+                    </form> 
+            </div>
+        </section>
+        
+        <section class="goods__section">
+            <div class="container">
+                <h2 class="h2-style goods__h2">Новые поступления</h2>
+                <ul class="goods__list">
+                    <li class="goods__item">
+                        <a href="" class="goods__link">
+                            <div class="goods__buttons-wrapper">
+                                <button class="goods__button goods__button--favorite"></button>
+                                <button class="goods__button goods__button--compare"></button>
+                            </div>
+                            <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
+                            <p class="goods__product-type">Лампа галогенная</p>
+                            <p class="goods__product-name">Лампа галогенная 94 209 JC 10 Вт clear G4 12Вт 2000h Navigator</p>
+                            <p class="goods__product-vendor-code">Артикул: JFH2392-33</p>
+                            <p class="goods__product-availability">Наличие: 1000</p>
+                            <p class="goods__product-cost">27.05 руб.</p>
+                            <button class="goods__button-basket"></button>
+                        </a>
+                    </li>
+                    <li class="goods__item">
+                        <a href="" class="goods__link">
+                            <div class="goods__buttons-wrapper">
+                                <button class="goods__button goods__button--favorite"></button>
+                                <button class="goods__button goods__button--compare"></button>
+                            </div>
+                            <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
+                            <p class="goods__product-type">Лампа галогенная</p>
+                            <p class="goods__product-name">Лампа галогенная 94 209 JC 10 Вт clear G4 12Вт 2000h Navigator</p>
+                            <p class="goods__product-vendor-code">Артикул: JFH2392-33</p>
+                            <p class="goods__product-availability">Наличие: 1000</p>
+                            <p class="goods__product-cost">27.05 руб.</p>
+                            <button class="goods__button-basket"></button>
+                        </a>
+                    </li>
+                    <li class="goods__item">
+                        <a href="" class="goods__link">
+                            <div class="goods__buttons-wrapper">
+                                <button class="goods__button goods__button--favorite"></button>
+                                <button class="goods__button goods__button--compare"></button>
+                            </div>
+                            <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
+                            <p class="goods__product-type">Лампа галогенная</p>
+                            <p class="goods__product-name">Лампа галогенная 94 209 JC 10 Вт clear G4 12Вт 2000h Navigator</p>
+                            <p class="goods__product-vendor-code">Артикул: JFH2392-33</p>
+                            <p class="goods__product-availability">Наличие: 1000</p>
+                            <p class="goods__product-cost">27.05 руб.</p>
+                            <button class="goods__button-basket"></button>
+                        </a>
+                    </li>
+                    <li class="goods__item">
+                        <a href="" class="goods__link">
+                            <div class="goods__buttons-wrapper">
+                                <button class="goods__button goods__button--favorite"></button>
+                                <button class="goods__button goods__button--compare"></button>
+                            </div>
+                            <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
+                            <p class="goods__product-type">Лампа галогенная</p>
+                            <p class="goods__product-name">Лампа галогенная 94 209 JC 10 Вт clear G4 12Вт 2000h Navigator</p>
+                            <p class="goods__product-vendor-code">Артикул: JFH2392-33</p>
+                            <p class="goods__product-availability">Наличие: 1000</p>
+                            <p class="goods__product-cost">27.05 руб.</p>
+                            <button class="goods__button-basket"></button>
+                        </a>
+                    </li>
+                    <li class="goods__item">
+                        <a href="" class="goods__link">
+                            <div class="goods__buttons-wrapper">
+                                <button class="goods__button goods__button--favorite"></button>
+                                <button class="goods__button goods__button--compare"></button>
+                            </div>
+                            <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
+                            <p class="goods__product-type">Лампа галогенная</p>
+                            <p class="goods__product-name">Лампа галогенная 94 209 JC 10 Вт clear G4 12Вт 2000h Navigator</p>
+                            <p class="goods__product-vendor-code">Артикул: JFH2392-33</p>
+                            <p class="goods__product-availability">Наличие: 1000</p>
+                            <p class="goods__product-cost">27.05 руб.</p>
+                            <button class="goods__button-basket"></button>
+                        </a>
+                    </li>
+                </ul>
+                <h2 class="h2-style goods__h2">Рекомендуемые</h2>
+                <ul class="goods__list">
+                    <li class="goods__item">
+                        <a href="" class="goods__link">
+                            <div class="goods__buttons-wrapper">
+                                <button class="goods__button goods__button--favorite"></button>
+                                <button class="goods__button goods__button--compare"></button>
+                            </div>
+                            <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
+                            <p class="goods__product-type">Лампа галогенная</p>
+                            <p class="goods__product-name">Лампа галогенная 94 209 JC 10 Вт clear G4 12Вт 2000h Navigator</p>
+                            <p class="goods__product-vendor-code">Артикул: JFH2392-33</p>
+                            <p class="goods__product-availability">Наличие: 1000</p>
+                            <p class="goods__product-cost">27.05 руб.</p>
+                            <button class="goods__button-basket"></button>
+                        </a>
+                    </li>
+                </ul>
+                
+                <h2 class="h2-style goods__h2">Популярные</h2>
+                <ul class="goods__list">
+                    <li class="goods__item">
+                        <a href="" class="goods__link">
+                            <div class="goods__buttons-wrapper">
+                                <button class="goods__button goods__button--favorite"></button>
+                                <button class="goods__button goods__button--compare"></button>
+                            </div>
+                            <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
+                            <p class="goods__product-type">Лампа галогенная</p>
+                            <p class="goods__product-name">Лампа галогенная 94 209 JC 10 Вт clear G4 12Вт 2000h Navigator</p>
+                            <p class="goods__product-vendor-code">Артикул: JFH2392-33</p>
+                            <p class="goods__product-availability">Наличие: 1000</p>
+                            <p class="goods__product-cost">27.05 руб.</p>
+                            <button class="goods__button-basket"></button>
+                        </a>
+                    </li>
+                </ul>
+                
+                <h2 class="h2-style goods__h2">Самые просматриваемые</h2>
+                <ul class="goods__list">
+                    <li class="goods__item">
+                        <a href="" class="goods__link">
+                            <div class="goods__buttons-wrapper">
+                                <button class="goods__button goods__button--favorite"></button>
+                                <button class="goods__button goods__button--compare"></button>
+                            </div>
+                            <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
+                            <p class="goods__product-type">Лампа галогенная</p>
+                            <p class="goods__product-name">Лампа галогенная 94 209 JC 10 Вт clear G4 12Вт 2000h Navigator</p>
+                            <p class="goods__product-vendor-code">Артикул: JFH2392-33</p>
+                            <p class="goods__product-availability">Наличие: 1000</p>
+                            <p class="goods__product-cost">27.05 руб.</p>
+                            <button class="goods__button-basket"></button>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </section>
+        <section class="partners__section">
+            <div class="container">
+                <h2 class="h2-style partners__h2">Партнеры производителей</h2>
+                <ul class="partners__list">
+                    <li class="partners__item"><img src="./images/partner-1.png" alt="" class=""></li>
+                    <li class="partners__item"><img src="./images/partner-2.png" alt="" class=""></li>
+                    <li class="partners__item"><img src="./images/partner-3.png" alt="" class=""></li>
+                    <li class="partners__item"><img src="./images/partner-4.png" alt="" class=""></li>
+                    <li class="partners__item"><img src="./images/partner-5.png" alt="" class=""></li>
+                    <li class="partners__item"><img src="./images/partner-6.png" alt="" class=""></li>
+                    <li class="partners__item"><img src="./images/partner-7.png" alt="" class=""></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer__section">
+            <div class="container footer__container">
+                    <ul class="footer__list footer__list-info">
+                        <li>
+                            <h2 class="h2-style footer__h2">Информация</h2>
+                        </li>
+                        <li><a href="">О магазине</a></li>
+                        <li><a href="">Доставка и оплата</a></li>
+                        <li><a href="">Условия соглашения</a></li>
+                        <li><a href="">Связаться с нами</a></li>
+                        <li><a href="">Возврат товара</a></li>
+                        <li><a href="">Производители</a></li>
+                        <li><a href="">Товары со скидкой</a></li>
+                    </ul>
+                    <ul class="footer__list footer__list-user">
+                        <li>
+                            <h2 class="h2-style footer__h2">Личный кабинет</h2>
+                        </li>
+                        <li><a href="">Личный кабинет</a></li>
+                        <li><a href="">История заказов</a></li>
+                        <li><a href="">Мои закладки</a></li>
+                        <li><a href="">Рассылка новостей</a></li>
+                    </ul>
+                    <ul class="footer__list footer__list-contacts">
+                        <li>
+                            <h2 class="h2-style footer__h2">Наши контакты</h2>
+                        </li>
+                        <li>
+                            <a href="" class="footer__contacts footer__contacts--address">Россия , г.Москва, ул.Артюхиной, д.4,  офис 308</a></li>
+                        <li>
+                            <a href="" class="footer__contacts footer__contacts--phone">+7 (495) 785-35-05</a></li>
+                        <li>
+                            <a href="" class="footer__contacts footer__contacts--email">info@monstervolt.ru</a></li>
+                        <li>
+                            <p class="footer__contacts footer__contacts--work-time">ПН-ПТ: 09:00 - 18:00</p></li>
+                        <li>
+                            <p class="footer__contacts footer__contacts--weekend">СБ-ВС: Выходные</p></li>
+                        <li class="footer__contacts-socials-wrapper">
+                            <a href="" class="footer__contacts--telegram"></a>
+                            <a href="" class="footer__contacts--whatsapp"></a>
+                            <a href="" class="footer__contacts--viber"></a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list footer__list-phones">
+                        <li>
+                            <h2 class="h2-style footer__h2">Телефоны</h2>
+                        </li>
+                        <li><a href="">Сматрфоны</a></li>
+                        <li><a href="">Мобильные телефоны</a></li>
+                        <li><a href="">Умные часы</a></li>
+                        <li><a href="">Аксессуары для телефонов</a></li>
+                        <li><a href="">Чехлы</a></li>
+                        <li><a href="">Планшеты</a></li>
+                    </ul>
+                    <ul class="footer__list footer__list-technics">
+                        <li>
+                            <h2 class="h2-style footer__h2">Портативная техника</h2>
+                        </li>
+                        <li><a href="">Очки виртуальной реальности</a></li>
+                        <li><a href="">Портативная акустика</a></li>
+                        <li><a href="">Квадрокоптеры</a></li>
+                        <li><a href="">Цифровые плееры</a></li>
+                        <li><a href="">Электронные книги</a></li>
+                    </ul>
+                    <ul class="footer__list footer__list-laptops">
+                        <li>
+                            <h2 class="h2-style footer__h2">Ноутбуки</h2>
+                        </li>
+                        <li><a href="">Ноутбуки и планшеты</a></li>
+                        <li><a href="">Игровые ноутбуки</a></li>
+                        <li><a href="">Планшеты</a></li>
+                        <li><a href="">Онлайн-кинотеатры</a></li>
+                        <li><a href="">Электронные книги</a></li>
+                        <li><a href="">Аксессуары для ноутбуков</a></li>
+                    </ul>
+                    <ul class="footer__list footer__list-audio">
+                        <li>
+                            <h2 class="h2-style footer__h2">Аудиотехника</h2>
+                        </li>
+                        <li><a href="">Наушники и гарнитура</a></li>
+                        <li><a href="">Акустика и колонки</a></li>
+                        <li><a href="">Микрофоны и аксессуары</a></li>
+                        <li><a href="">MP3-плееры</a></li>
+                        <li><a href="">Радиоприемники</a></li>
+                        <li><a href="">Магнитолы</a></li>
+                        <li><a href="">Hi-Res плееры</a></li>
+                    </ul>
+                </div>
+        </section>
+        <section class="footer__copyrights-section">
+            <div class="container footer__copyrights-container">
+                <a href="" class="footer__copyrights-logo"></a>
+                <p class="footer__copyrights-name">Интернет магазин Monstervolt, 2023</p>
+                <div class="footer__copyrights-payment-container">
+                    <p class="footer__copyrights-payment-description">
+                        Принимаем к оплате:
+                    </p>
+                    <ul class="footer__copyrights-payment-list">
+                        <li class="footer__copyrights-payment-item footer__copyrights-payment-item--1"></li>
+                        <li class="footer__copyrights-payment-item footer__copyrights-payment-item--2"></li>
+                        <li class="footer__copyrights-payment-item footer__copyrights-payment-item--3"></li>
+                        <li class="footer__copyrights-payment-item footer__copyrights-payment-item--4"></li>
+                        <li class="footer__copyrights-payment-item footer__copyrights-payment-item--5"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
