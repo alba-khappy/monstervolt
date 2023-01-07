@@ -91,6 +91,35 @@ input {
     margin-right: 1.5rem;
 }
 
+.header__link, .header__enter {
+    position: relative;
+}
+
+.header__link::after, .header__enter::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    transition: width 0.5s;
+}
+
+.header__link:hover:after, .header__enter:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; 
+    background-color: #FFFFFF; 
+    transition: width 0.5s;
+}
+
 .header__address {
     font-style: normal;
 }
@@ -226,6 +255,11 @@ input {
 .action-bar__action-icon {
     width: 2rem;
     height: 2rem;
+    transition: all 500ms ease;
+}
+
+.action-bar__action-icon:hover {
+    transform: scale(1.1)
 }
 
 .action-bar__action-icon--compare {
@@ -241,6 +275,7 @@ input {
 }
 
 /*navigation__section*/
+
 .navigation__container {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -255,11 +290,42 @@ input {
     font-weight: 400;
     font-size: .7rem;
     padding: 1rem 1rem 1rem 2.8rem;
+    transition: all 500ms ease; 
+}
+
+.navigation__link--catalog:hover {
+    background-size: 17%;
 }
 
 .navigation__link {
+    position: relative;
     font-weight: 400;
     font-size: .7rem;
+}
+
+.navigation__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    border-radius: 1rem;
+    background-color: #242225;
+    transition: width 0.5s;
+}
+
+.navigation__link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px; 
+    background-color: #242225; 
+    transition: width 0.5s;
 }
 
 .navigation__list {
@@ -297,6 +363,13 @@ input {
     width: 2.5rem;
     height: 2.5rem;
     border: none;
+    border-radius: 2rem;
+    transition: all 500ms ease; 
+}
+
+.main-banner__swiper-button:hover {
+	box-shadow: inset 0 0 0 3px #FFFFFF;
+    border-radius: 2rem;
 }
 
 .main-banner__swiper-button--prev {
@@ -345,6 +418,11 @@ input {
     display: inline-block;
     max-width: 65%;
     margin: 0 0 1rem 0;
+    transition: all 500ms ease; 
+}
+
+.categories__item-content:hover {
+    color: #215BD4;
 }
 
 .categories__button-show-more {
@@ -358,6 +436,13 @@ input {
     border-radius: .4rem;
     font-weight: 700;
     font-size: 18px;
+    transition: all 500ms ease; 
+}
+
+.categories__button-show-more:hover {
+    background: rgba(0,0,0,0);
+	color: #215BD4;
+	box-shadow: inset 0 0 0 3px #215BD4;
 }
 
 
@@ -420,6 +505,17 @@ input {
     padding: 1rem 3rem;
     font-size: .9rem;
     z-index: 11;
+    transition: all 500ms ease;
+}
+
+.discounts__button-offers:hover {
+    background: #215BD4;
+	color: #FFFFFF;
+	box-shadow: inset 0 0 0 3px #FFFFFF;
+}
+
+.discounts__link-privacy-policy {
+    border-bottom: 1px solid #FFFFFF;
 }
 
 
@@ -448,6 +544,11 @@ input {
     border: 1px solid #999;
     border-radius: .4rem;
     padding: 0.8rem;
+    transition: all 500ms ease;
+}
+
+.goods__item:hover {
+    border: 1px solid #215BD4;
 }
 
 .goods__link {
@@ -467,6 +568,11 @@ input {
     border: none;
     width: 1rem;
     height: 1rem;
+    transition: all 500ms ease;
+}
+
+.goods__button:hover {
+    transform: scale(1.1);
 }
 
 .goods__button--favorite {
@@ -527,6 +633,11 @@ input {
     border-radius: .4rem;
     background: #215BD4 url(./images/basket-white.svg) center / 60% no-repeat;
     border: none;
+    transition: all 500ms ease;
+}
+
+.goods__button-basket:hover {
+    transform: scale(1.1);
 }
 
 
@@ -577,6 +688,17 @@ input {
     font-weight: 400;
     font-size: .9rem;
     margin-bottom: 1rem;
+    transition: all 500ms ease;
+}
+
+.footer__list > li > a:hover {
+    transform: scale(1.1) translateX(.4rem);
+}
+
+.footer__list > li > .footer__contacts--telegram:hover,
+.footer__list > li > .footer__contacts--whatsapp:hover,
+.footer__list > li > .footer__contacts--viber:hover {
+    transform: scale(1.4);
 }
 
 .footer__lists-wrapper::after {
