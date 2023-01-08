@@ -258,6 +258,12 @@ input {
     padding: .2rem .7rem;
     font-size: .7rem;
     transform: translateX(-1rem);
+    transition: all 500ms ease;
+}
+
+.action-bar__call-order:hover {
+    background: #215BD4;
+	color: #FFFFFF;
 }
 
 .action-bar__call-number {
@@ -286,20 +292,13 @@ input {
     transition: all 500ms ease;
 }
 
-.action-bar__action-icon:hover {
-    transform: scale(1.1)
+.action-bar__action-icon > svg {
+    width: 100%;
+    height: 100%;
 }
 
-.action-bar__action-icon--compare {
-    background: url(./images/compare.svg) center / contain no-repeat;
-}
-
-.action-bar__action-icon--favorite {
-    background: url(./images/heart.svg) center / contain no-repeat;
-}
-
-.action-bar__action-icon--basket {
-    background: url(./images/basket.svg) center / contain no-repeat;
+.action-bar__action-icon:hover > svg > path, .action-bar__action-icon:hover > svg > g > path {
+    fill: #103FA0;
 }
 
 /*navigation__section*/
@@ -369,15 +368,35 @@ input {
   position: relative; 
   display: flex;
   align-items: center; */
-  width:90%;
+  width:100%;
   margin:0px auto;
 }
 
-.main-banner__swiper-img {
+/* .main-banner__swiper-img {
     height: 100%;
     object-fit: contain;
+} */
+
+.slick-prev, .slick-next {
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 50;
+    top: 47%;
 }
 
+.slick-prev:before, .slick-next:before {
+    font-size: 50px;
+    color: #215BD4;
+    z-index: 50;
+}
+
+.slick-prev {
+    left: 1rem;
+}
+
+.slick-next {
+    right: 1rem;
+}
 
 .main-banner__swiper-buttons {
     position: absolute;
@@ -423,29 +442,62 @@ input {
 }
 
 .categories__list {
+    height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     flex-wrap: wrap;
+    align-content: stretch;
     gap: 2rem;
     margin: 0 0 2rem 0;
 }
 
 .categories__item {
-    max-width: 22rem;
-    background: #FFFFFF url(./images/item-2.png) right / max(8rem) no-repeat;
+    width: 31%;
+    min-height: 23rem;
+    max-height: 22rem;
+    min-width: 17rem;
+    background: #FFFFFF right / max(7rem) no-repeat;
     padding: 0.75rem 1rem;
     border-radius: .5rem;
+    overflow: scroll;
+}
+
+.categories__item--1 {
+    background-image: url(./images/categories__item--1.jpeg);
+}
+
+.categories__item--2 {
+    background-image: url(./images/categories__item--2.jpeg);
+}
+
+.categories__item--3 {
+    background-image: url(./images/categories__item--3.jpeg);
+}
+
+.categories__item--4 {
+    background-image: url(./images/categories__item--4.jpeg);
+}
+
+.categories__item--5 {
+    background-image: url(./images/categories__item--5.jpeg);
+}
+
+.categories__item--6 {
+    background-image: url(./images/categories__item--6.jpeg);
 }
 
 .categories__h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
     margin: 0 0 1rem 0;
 }
 
 .categories__item-content {
-    display: inline-block;
+    display: block;
     max-width: 65%;
-    margin: 0 0 1rem 0;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    margin: 0 0 .5rem 0;
     transition: all 500ms ease; 
 }
 
@@ -570,6 +622,7 @@ input {
 
 .goods__item {
     max-width: 15rem;
+    height: 20rem;
     border: 1px solid #999;
     border-radius: .4rem;
     padding: 0.8rem;
@@ -611,7 +664,7 @@ input {
 
 .goods__item-image {
     max-width: 10rem;
-    max-height: 10rem;
+    height: 8rem;
     margin: 0 auto;
 }
 
@@ -763,6 +816,7 @@ input {
     width: 1rem;
     height: 1rem;
     background: transparent url(./images/phone-white.svg) center / contain no-repeat;
+    transform: translateY(7px);
 }
 
 .footer__contacts--email::before   {
@@ -772,6 +826,7 @@ input {
     width: 1rem;
     height: 1rem;
     background: transparent url(./images/email.svg) center / contain no-repeat;
+    transform: translateY(7px);
 }
 
 .footer__contacts--work-time::before   {
@@ -888,14 +943,6 @@ input {
 
 
 @media (max-width: 1599px) {
-
-    .main-banner__swiper {
-        height: auto;
-    }
-
-    .main-banner__swiper-img {
-        object-fit: cover;
-    } 
 
     .categories__list, .goods__list {
         justify-content: center;
@@ -1039,19 +1086,6 @@ input {
     }
 
     /*categories*/
-
-    .categories__item-content {
-        max-width: 80%;
-        font-size: .9rem;
-    }
-
-    .categories__item {
-        background: #FFFFFF url(./images/item-2.png) right / max(20%) no-repeat;
-    }
-
-    .categories__h3 {
-        font-size: .8rem;
-    }
 
     /*discounts*/
 
