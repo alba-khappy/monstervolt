@@ -5,74 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <title>Monstervolt</title>
+    <script defer src="./action-bar.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="container header__container header__container--desktop">
-            <nav>
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="" class="header__link">Контакты</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="" class="header__link">О магазине</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="" class="header__link">Доставка и оплата</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="" class="header__link">Условия соглашения</a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="header__address">г. Москва и МО</address>
-            <a href="/" class="header__enter">Вход/Регистрация</a>
-        </div>
-        <div class="container header__container header__container--mobile">
-            <div>
-                <button class="header__burger-menu"></button>
-                <ul class="navigation__list navigation__list--mobile">
-                    <li>
-                        <a href="" class="navigation__link--catalog">КАТАЛОГ ТОВАРОВ</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation__link">СВЕТИЛЬНИКИ</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation__link">КАБЕЛЕНЕСУЩИЕ СИСТЕМЫ</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation__link">КАБЕЛИ</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation__link">БОКСЫ И ЩИТЫ</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation__link">ОСВЕЩЕНИЕ</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation__link">ЛАМПЫ</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation__link">ТЕПЛЫЕ ПОЛЫ</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation__link">ПРОИЗВОДИТЕЛИ</a>
-                    </li>
-                </ul>
+        <section class="main-navigation__section">
+            <div class="container">
+                <div class="main-navigation__container main-navigation__container--desktop">
+                    <nav>
+                        <ul class="main-navigation__list">
+                            <li class="main-navigation__item">
+                                <a href="" class="main-navigation__link">Контакты</a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="" class="main-navigation__link">О магазине</a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="" class="main-navigation__link">Доставка и оплата</a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="" class="main-navigation__link">Условия соглашения</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="main-navigation__address">г. Москва и МО</address>
+                    <a href="/" class="main-navigation__enter">Вход/Регистрация</a>
+                </div>
+
+                <div class="container main-navigation__container main-navigation__container--mobile">
+                    <div>
+                        <button class="main-navigation__burger-menu"></button>
+                        <ul class="navigation__list navigation__list--mobile">
+                            <li>
+                                <a href="" class="navigation__link--catalog">КАТАЛОГ ТОВАРОВ</a>
+                            </li>
+                            <li>
+                                <a href="" class="navigation__link">СВЕТИЛЬНИКИ</a>
+                            </li>
+                            <li>
+                                <a href="" class="navigation__link">КАБЕЛЕНЕСУЩИЕ СИСТЕМЫ</a>
+                            </li>
+                            <li>
+                                <a href="" class="navigation__link">КАБЕЛИ</a>
+                            </li>
+                            <li>
+                                <a href="" class="navigation__link">БОКСЫ И ЩИТЫ</a>
+                            </li>
+                            <li>
+                                <a href="" class="navigation__link">ОСВЕЩЕНИЕ</a>
+                            </li>
+                            <li>
+                                <a href="" class="navigation__link">ЛАМПЫ</a>
+                            </li>
+                            <li>
+                                <a href="" class="navigation__link">ТЕПЛЫЕ ПОЛЫ</a>
+                            </li>
+                            <li>
+                                <a href="" class="navigation__link">ПРОИЗВОДИТЕЛИ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="main-navigation__link-info"></a>
+                    <a href="" class="main-navigation__link-enter"></a>
+                    <button class="main-navigation__button-search"></button>
+                    <div class="main-navigation__search-bar">
+                        <input type="text" class="main-navigation__search-bar-input" placeholder="Поиск товара по каталогу">
+                        <button class="main-navigation__search-bar-button-close"></button>
+                    </div>
+                </div>  
             </div>
-            <a href="" class="header__link-info"></a>
-            <a href="" class="header__link-enter"></a>
-            <button class="header__button-search"></button>
-            <div class="header__search-bar">
-                <input type="text" class="header__search-bar-input" placeholder="Поиск товара по каталогу">
-                <button class="header__search-bar-button-close"></button>
-            </div>
-        </div>
-    </header>
-    <main>
+        </section>
         <section class="action-bar__section">
             <div class="container action-bar__container">
                 <a href="/" class="action-bar__logo"></a>
@@ -128,11 +134,22 @@
                 </ul>
             </div>
         </section>
-
+    </header>
+    <main>
         <section class="main-banner__section">
             <div class="container main-banner__container">
                 <div class="main-banner__swiper">
-                    <img src="./images/swiper.jpg" alt="" class="main-banner__swiper-img">
+                    <div>
+                        <img src="./images/slider-img-1.jpeg" alt="" class="main-banner__swiper-img">
+                    </div>
+                    <div>
+                        <img src="./images/slider-img-2.jpeg" alt="" class="main-banner__swiper-img">
+                    </div>
+                    <div>
+                        <img src="./images/slider-img-3.jpeg" alt="" class="main-banner__swiper-img">
+                    </div>
+                    
+                    
                     <div class="main-banner__swiper-buttons">
                         <button class="main-banner__swiper-button main-banner__swiper-button--prev"></button>
                         <button class="main-banner__swiper-button main-banner__swiper-button--next"></button>
@@ -199,8 +216,25 @@
                     <li class="goods__item">
                         <a href="" class="goods__link">
                             <div class="goods__buttons-wrapper">
-                                <button class="goods__button goods__button--favorite"></button>
-                                <button class="goods__button goods__button--compare"></button>
+                                <button class="goods__button goods__button--favorite">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3094 3.72852C13.791 3.72852 12.3984 4.43828 11.5 5.60625C10.6016 4.43828 9.20898 3.72852 7.69062 3.72852C5.03574 3.72852 2.875 5.89824 2.875 8.5666C2.875 9.81992 3.35117 11.0104 4.21816 11.9178L11.0104 18.7773L11.5 19.2715L11.9896 18.7773L18.6516 12.048C19.5949 11.1361 20.125 9.89629 20.125 8.5666C20.125 5.89824 17.9643 3.72852 15.3094 3.72852Z" fill="#215BD4"/>
+                                    </svg>
+                                </button>
+                                <button class="goods__button goods__button--compare">
+                                    <svg width="15" height="22" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_9_805)">
+                                        <path d="M1.39999 21.8C0.599994 21.8 0 21.2 0 20.4V13.7C0 12.9 0.599994 12.3 1.39999 12.3C2.19999 12.3 2.80002 12.9 2.80002 13.7V20.4C2.80002 21.2 2.19999 21.8 1.39999 21.8Z" fill="#215BD4"/>
+                                        <path d="M7.29999 21.9C6.49999 21.9 5.89996 21.3 5.89996 20.5V1.29999C5.89996 0.499988 6.49999 -0.100006 7.29999 -0.100006C8.09999 -0.100006 8.69998 0.499988 8.69998 1.29999V20.5C8.69998 21.3 8.09999 21.9 7.29999 21.9Z" fill="#215BD4"/>
+                                        <path d="M13.6 21.6C12.8 21.6 12.2 21 12.2 20.2V7.10001C12.2 6.30001 12.8 5.70001 13.6 5.70001C14.4 5.70001 15 6.30001 15 7.10001V20.2C15 21 14.4 21.6 13.6 21.6Z" fill="#215BD4"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_9_805">
+                                        <rect width="15" height="22" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
                             </div>
                             <img src="./images/goods-item-1.png" alt="" class="goods__item-image">
                             <p class="goods__product-type">Лампа галогенная</p>
@@ -353,22 +387,22 @@
                         <li>
                             <h2 class="h2-style footer__h2">Информация</h2>
                         </li>
-                        <li><a href="">О магазине</a></li>
-                        <li><a href="">Доставка и оплата</a></li>
-                        <li><a href="">Условия соглашения</a></li>
-                        <li><a href="">Связаться с нами</a></li>
-                        <li><a href="">Возврат товара</a></li>
-                        <li><a href="">Производители</a></li>
-                        <li><a href="">Товары со скидкой</a></li>
+                        <li><a href="" class="footer__link--text">О магазине</a></li>
+                        <li><a href="" class="footer__link--text">Доставка и оплата</a></li>
+                        <li><a href="" class="footer__link--text">Условия соглашения</a></li>
+                        <li><a href="" class="footer__link--text">Связаться с нами</a></li>
+                        <li><a href="" class="footer__link--text">Возврат товара</a></li>
+                        <li><a href="" class="footer__link--text">Производители</a></li>
+                        <li><a href="" class="footer__link--text">Товары со скидкой</a></li>
                     </ul>
                     <ul class="footer__list footer__list-user">
                         <li>
                             <h2 class="h2-style footer__h2">Личный кабинет</h2>
                         </li>
-                        <li><a href="">Личный кабинет</a></li>
-                        <li><a href="">История заказов</a></li>
-                        <li><a href="">Мои закладки</a></li>
-                        <li><a href="">Рассылка новостей</a></li>
+                        <li><a href="" class="footer__link--text">Личный кабинет</a></li>
+                        <li><a href="" class="footer__link--text">История заказов</a></li>
+                        <li><a href="" class="footer__link--text">Мои закладки</a></li>
+                        <li><a href="" class="footer__link--text">Рассылка новостей</a></li>
                     </ul>
                     <ul class="footer__list footer__list-contacts">
                         <li>
@@ -394,45 +428,45 @@
                         <li>
                             <h2 class="h2-style footer__h2">Телефоны</h2>
                         </li>
-                        <li><a href="">Сматрфоны</a></li>
-                        <li><a href="">Мобильные телефоны</a></li>
-                        <li><a href="">Умные часы</a></li>
-                        <li><a href="">Аксессуары для телефонов</a></li>
-                        <li><a href="">Чехлы</a></li>
-                        <li><a href="">Планшеты</a></li>
+                        <li><a href="" class="footer__link--text">Сматрфоны</a></li>
+                        <li><a href="" class="footer__link--text">Мобильные телефоны</a></li>
+                        <li><a href="" class="footer__link--text">Умные часы</a></li>
+                        <li><a href="" class="footer__link--text">Аксессуары для телефонов</a></li>
+                        <li><a href="" class="footer__link--text">Чехлы</a></li>
+                        <li><a href="" class="footer__link--text">Планшеты</a></li>
                     </ul>
                     <ul class="footer__list footer__list-technics">
                         <li>
                             <h2 class="h2-style footer__h2">Портативная техника</h2>
                         </li>
-                        <li><a href="">Очки виртуальной реальности</a></li>
-                        <li><a href="">Портативная акустика</a></li>
-                        <li><a href="">Квадрокоптеры</a></li>
-                        <li><a href="">Цифровые плееры</a></li>
-                        <li><a href="">Электронные книги</a></li>
+                        <li><a href="" class="footer__link--text">Очки виртуальной реальности</a></li>
+                        <li><a href="" class="footer__link--text">Портативная акустика</a></li>
+                        <li><a href="" class="footer__link--text">Квадрокоптеры</a></li>
+                        <li><a href="" class="footer__link--text">Цифровые плееры</a></li>
+                        <li><a href="" class="footer__link--text">Электронные книги</a></li>
                     </ul>
                     <ul class="footer__list footer__list-laptops">
                         <li>
                             <h2 class="h2-style footer__h2">Ноутбуки</h2>
                         </li>
-                        <li><a href="">Ноутбуки и планшеты</a></li>
-                        <li><a href="">Игровые ноутбуки</a></li>
-                        <li><a href="">Планшеты</a></li>
-                        <li><a href="">Онлайн-кинотеатры</a></li>
-                        <li><a href="">Электронные книги</a></li>
-                        <li><a href="">Аксессуары для ноутбуков</a></li>
+                        <li><a href="" class="footer__link--text">Ноутбуки и планшеты</a></li>
+                        <li><a href="" class="footer__link--text">Игровые ноутбуки</a></li>
+                        <li><a href="" class="footer__link--text">Планшеты</a></li>
+                        <li><a href="" class="footer__link--text">Онлайн-кинотеатры</a></li>
+                        <li><a href="" class="footer__link--text">Электронные книги</a></li>
+                        <li><a href="" class="footer__link--text">Аксессуары для ноутбуков</a></li>
                     </ul>
                     <ul class="footer__list footer__list-audio">
                         <li>
                             <h2 class="h2-style footer__h2">Аудиотехника</h2>
                         </li>
-                        <li><a href="">Наушники и гарнитура</a></li>
-                        <li><a href="">Акустика и колонки</a></li>
-                        <li><a href="">Микрофоны и аксессуары</a></li>
-                        <li><a href="">MP3-плееры</a></li>
-                        <li><a href="">Радиоприемники</a></li>
-                        <li><a href="">Магнитолы</a></li>
-                        <li><a href="">Hi-Res плееры</a></li>
+                        <li><a href="" class="footer__link--text">Наушники и гарнитура</a></li>
+                        <li><a href="" class="footer__link--text">Акустика и колонки</a></li>
+                        <li><a href="" class="footer__link--text">Микрофоны и аксессуары</a></li>
+                        <li><a href="" class="footer__link--text">MP3-плееры</a></li>
+                        <li><a href="" class="footer__link--text">Радиоприемники</a></li>
+                        <li><a href="" class="footer__link--text">Магнитолы</a></li>
+                        <li><a href="" class="footer__link--text">Hi-Res плееры</a></li>
                     </ul>
                 </div>
         </section>
@@ -455,5 +489,16 @@
             </div>
         </section>
     </footer>
+    <script defer src="./action-bar.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.main-banner__swiper').slick({
+            centerMode: true,
+          });
+        });
+    </script>
 </body>
+
 </html>
