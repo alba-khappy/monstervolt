@@ -464,6 +464,7 @@ input {
 }
 
 .categories__item {
+    position: relative;
     width: 31%;
     min-height: 23rem;
     max-height: 22rem;
@@ -471,7 +472,7 @@ input {
     background: #FFFFFF right / max(7rem) no-repeat;
     padding: 0.75rem 1rem;
     border-radius: .5rem;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .categories__item--1 {
@@ -496,6 +497,20 @@ input {
 
 .categories__item--6 {
     background-image: url(./images/categories__item--6.jpeg);
+}
+
+.categories__link-show-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.9) 60%, rgba(255,255,255,0) 100%);
+    font-size: .8rem;
+    color: #215BD4;
 }
 
 .categories__h3 {
