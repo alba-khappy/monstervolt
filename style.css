@@ -203,6 +203,7 @@ input {
     font-weight: 400;
     color: #215BD4;
     padding: 0 1rem;
+    cursor: pointer;
 }
 
 .action-bar__search-category::after {
@@ -257,7 +258,7 @@ input {
     border-radius: .4rem;
     padding: .2rem .7rem;
     font-size: .7rem;
-    transform: translateX(-1rem);
+    text-align: center;
     transition: all 500ms ease;
 }
 
@@ -267,17 +268,28 @@ input {
 }
 
 .action-bar__call-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: .5rem;
 }
 
-.action-bar__call-number::before {
+.action-bar__call-number:hover > svg > g > path{
+    fill: #103FA0;
+}
+
+.action-bar__call-tel {
+    margin: 0 .5rem 0;
+}
+
+/* .action-bar__call-number::before {
     content: '';
     width: 1.5rem;
     height: 1.5rem;
     position: absolute;
     background: url(./images/phone.svg) center no-repeat;
     transform: translateX(-1.5rem);
-}
+} */
 
 .action-bar__action-icons {
     display: flex;
@@ -1145,6 +1157,15 @@ input {
         padding-right: 1rem;
     }
 
+    .navigation__list--mobile {
+        padding: .5rem 1rem 1rem;
+    }
+
+    .navigation__list > li > a {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
     .main-banner__container {
         padding: 0;
     }
@@ -1156,6 +1177,10 @@ input {
 
     .categories__h2 {
         margin-bottom: 1rem;
+    }
+
+    .categories__item {
+        background-size: max(6rem);
     }
 
     .goods__section {
