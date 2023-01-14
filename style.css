@@ -235,6 +235,7 @@ input {
     width: 80%;
     border: none;
     color: #215BD4;
+    font-size: .8rem;
 }
 
 .action-bar__search-form-input::placeholder {
