@@ -59,6 +59,20 @@
     line-height: 1rem;
 }
 
+.filter > input[type=text] {
+    background: #FFFFFF;
+    box-shadow: inset 4px 0px 8px 3px rgba(0, 0, 0, 0.09);
+    border-radius: .4rem;
+    border: none;
+    padding: .7rem;
+}
+
+.filter > input[type=text]::placeholder {
+    font-weight: 400;
+    font-size: .8rem;
+    color: #999999;
+}
+
 label {
     display: inline-block;
     padding: .2rem .6rem;
@@ -78,13 +92,37 @@ input[type=checkbox] {
     font-size: .7rem;
 }
 
-
 /*products_list*/
+
+.products-list__sorting {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.products-list__sorting-text {
+    margin: 0;
+    line-height: 2rem;
+}
+
+.products-list__dropdown {
+    border-radius: .4rem;
+}
+
+.products-list__dropdown--type {
+    width: 30%;
+}
+
+.products-list__dropdown--amount {
+    width: 10%;
+}
 
 .products-list__h1 {
     font-weight: 700;
     font-size: 30px;
     color: #242225;
+    margin: 0 0 2rem;
+    line-height: 3rem;
 }
 
 
