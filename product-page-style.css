@@ -60,10 +60,12 @@
 }
 
 .filter > input[type=text] {
+    width: 48%;
     background: #FFFFFF;
     box-shadow: inset 4px 0px 8px 3px rgba(0, 0, 0, 0.09);
     border-radius: .4rem;
     border: none;
+    font-size: .8rem;
     padding: .7rem;
 }
 
