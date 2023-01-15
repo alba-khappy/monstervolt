@@ -41,16 +41,41 @@
 }
 
 .filter {
-    width: 30%;
     background: #EFF4FF;
-    border-radius: 10px;
+    border-radius: .5rem;
     padding: .8rem; 
 }
 
-.filter__h3 {
+.filter > h3 {
     font-weight: 600;
-    font-size: 18px;
-    color: #242225;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.filter > h4 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 1.5rem 0 .6rem 0;
+    line-height: 1rem;
+}
+
+label {
+    display: inline-block;
+    padding: .2rem .6rem;
+    cursor: pointer;
+    background-color: #FFF;
+    border-radius: .4rem;
+    margin-right: .3rem;
+    margin-bottom: .4rem;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.filter > label > small {
+    color: #999999;
+    font-size: .7rem;
 }
 
 
