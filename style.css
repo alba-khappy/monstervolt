@@ -1170,7 +1170,7 @@ input {
     }
 
     .categories__item {
-        min-width: 18rem;
+        min-width: 17rem;
         background-size: max(6rem);
     }
 
