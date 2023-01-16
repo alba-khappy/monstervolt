@@ -624,19 +624,19 @@ input {
 
 .goods__list {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 2rem 3rem;
+    gap: 2rem 3.5%;
     margin: 0;
 }
 
 .goods__item {
-    width: 15rem;
-    height: 20rem;
+    width: 31%;
+    min-width: 13rem;
     border: 1px solid #999;
     border-radius: .4rem;
     padding: 0.8rem;
     transition: all 500ms ease;
-    margin: 0 auto;
 }
 
 .goods__item:hover {
@@ -1176,6 +1176,10 @@ input {
     .goods__section {
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    .goods__list {
+        justify-content: center;
     }
 
     .footer__copyrights-container {
