@@ -82,6 +82,7 @@ input {
     height: 1rem;
     right: 1rem;
     background: url(./images/arrow-open.svg) center / contain no-repeat;
+    transform: translateY(3px);
 }
 
 .primary-button {
