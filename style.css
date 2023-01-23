@@ -86,6 +86,7 @@
     border-radius: .5rem;
     box-shadow: 0px 4px 16px -2px rgb(5 8 16 / 20%);
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .categories__item--1 {
@@ -129,6 +130,7 @@
 .categories__h3 {
     font-size: 1rem;
     text-transform: uppercase;
+    white-space: break-spaces;
     margin: 0 0 1rem 0;
 }
 
@@ -137,6 +139,7 @@
     max-width: 65%;
     font-size: .8rem;
     line-height: 1.3rem;
+    white-space: break-spaces;
     margin: 0 0 .5rem 0;
     transition: all 500ms ease; 
 }
@@ -303,7 +306,7 @@
     }
 
     .categories__item {
-        min-width: 17rem;
+        min-width: 16rem;
         background-size: max(6rem);
     }
 }
