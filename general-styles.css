@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -407,9 +408,12 @@ input {
 }
 
 .breadcrumbs__link {
+    display: inline-block;
+    line-height: 1;
     font-size: .8rem;
     color: #215BD4;
     border-bottom: 1px solid #215BD4;
+    margin-bottom: .5rem;
     transition: all 500ms ease;
 }
 
@@ -426,10 +430,12 @@ input {
 }
 
 .breadcrumbs__link--last {
+    display: inline-block;
     pointer-events: none; 
     font-size: .8rem;
     color: #999999;
     border: none;
+    line-height: 1.2;
 }
 
 /*goods__section*/
@@ -510,6 +516,7 @@ input {
     font-weight: 600;
     font-size: .7rem;
     color: #242225;
+    line-height: 1.5;
     margin: 0;
 }
 

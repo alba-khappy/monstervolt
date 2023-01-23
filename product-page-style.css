@@ -2,15 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .product-info__nav-list {
     position: sticky;
     top: 5rem;
+    padding-bottom: 4rem;
 }
 
-.product-info__nav-item {
+.product-info__nav-item:not(:last-child) {
     margin-bottom: 1rem;
 }
 
@@ -58,14 +59,14 @@
 }
 
 .product-info__content-section {
-    width: 64%;
+    width: 70%;
+    padding-bottom: 4rem;
 }
 
 .product-info__content-wrapper {
     display: grid;
     grid-template-columns: 68% 30%;
     gap: 2%;
-    padding-right: 1rem;
 }
 
 .product-info__content-h1 {
@@ -86,7 +87,7 @@
 }
 
 .product-info__content-text:not(:last-child) {
-    margin: 0 0 0.7rem;
+    margin: 0 0 1rem;
 }
 
 .product-info__content-text--bold {
@@ -97,6 +98,11 @@
     color: #215BD4;
     font-weight: 400;
     font-size: .8rem;
+}
+
+.product-info__manufacturers-list {
+    display: flex;
+    justify-content: flex-start;
 }
 
 /*slider*/
@@ -162,6 +168,12 @@
 }
 
 /*product-info__action-panel*/
+
+.product-info__action-panel {
+    position: sticky;
+    top: 5rem;
+    padding-bottom: 4rem;
+}
 
 .product-info__action-panel-container {
     display: flex;
@@ -298,6 +310,7 @@
             bottom: 0;
             left: 0;
             right: 0;
+            top: auto;
             padding: 1rem 2rem;
             margin-bottom: 0;
             z-index: 10;
@@ -341,10 +354,10 @@
 
     .product-info__content-delivery-item {
         width: 50%;
-    } 
+    }
 
-    .product-info__goods-list {
-        flex-direction: column;
+    .slick-slide img {
+        margin: 0 auto;
     }
 }
 
@@ -357,6 +370,11 @@
     .product-info__content-wrapper {
         padding-right: 0;
     }
+
+    .product-info__content-h4 {
+        margin: 0 0 .5rem;
+        line-height: 1.5;
+    }
     
     .product-info__content-main-characteristics, .product-info__nav-list, .product-info__action-panel-button-buy {
         display: none;
@@ -368,6 +386,10 @@
 
     .product-info__action-panel-button > span {
         display: none;
+    }
+
+    .product-info__manufacturers-list {
+        justify-content: center;
     }
 
     .product-info__action-panel {
@@ -393,5 +415,13 @@
 
     .product-info__action-panel-button-basket {
         padding: .5rem 1rem;
+    }
+
+    .product-info__content-delivery {
+        margin-bottom: 3rem;
+    }
+
+    .product-info__content-text:not(:last-child) {
+        margin: 0 0 0.5rem;
     }
 }
