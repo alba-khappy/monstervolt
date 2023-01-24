@@ -29,7 +29,7 @@ img {
 .container {
     max-width: 1800px;
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 0 3rem;
 }
 
 ul {
@@ -48,6 +48,7 @@ a {
 }
 
 button {
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
 
@@ -92,10 +93,10 @@ input {
     background-color: #215BD4;
     color: #FFFFFF;
     margin: 0 auto;
-    padding: 1rem 2.5rem;
+    padding: .7rem 2.2rem;
     border-radius: .4rem;
     font-weight: 700;
-    font-size: 18px;
+    font-size: .9rem;
     transition: all 500ms ease; 
 }
 
@@ -150,7 +151,7 @@ input {
     position: relative;
 }
 
-.main-navigation__link::after, .main-navigation__enter::after, .footer__link--text::after{
+.main-navigation__link::after, .main-navigation__enter::after, .footer__link--text::after {
     content: "";
     display: block;
     position: absolute;
@@ -301,7 +302,7 @@ input {
     margin-bottom: .5rem;
 }
 
-.action-bar__call-number:hover > svg > g > path{
+.action-bar__call-number:hover > svg > g > path {
     fill: #103FA0;
 }
 
@@ -319,12 +320,15 @@ input {
 .action-bar__action-icon {
     width: 1.5rem;
     height: 1.5rem;
-    transition: all 500ms ease;
 }
 
 .action-bar__action-icon > svg {
     width: 100%;
     height: 100%;
+}
+
+.action-bar__action-icon > svg > path, .action-bar__action-icon > svg > g > path, .action-bar__call-number:hover > svg > g > path {
+   transition: all 500ms ease; 
 }
 
 .action-bar__action-icon:hover > svg > path, .action-bar__action-icon:hover > svg > g > path {
@@ -371,7 +375,7 @@ input {
     transition: width 0.5s;
 }
 
-.navigation__link:hover:after {
+.navigation__link:hover::after {
 	content: "";
     width: 100%;
     display: block;
