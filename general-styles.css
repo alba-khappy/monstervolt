@@ -519,10 +519,12 @@ input {
 }
 
 .goods__product-name {
+    height: 3rem;
     font-weight: 600;
     font-size: .7rem;
     color: #242225;
     line-height: 1.5;
+    overflow: hidden;
     margin: 0;
 }
 
