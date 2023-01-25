@@ -341,7 +341,7 @@
     color: #215BD4;
     box-shadow: 0 0 3px rgba(36, 41, 54, 0.2);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: .7rem 1rem;
     transition: all 500ms ease;
 }
 
